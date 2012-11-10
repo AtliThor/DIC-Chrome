@@ -33,6 +33,9 @@ $(document).on('ready', function () {
             var list = $('#entries').find('ul');
             var links = new Array();
             unread.find(Config.Settings.linkSelector).each(function () {
+                if (Config.Settings.linkToFirstUnread) {
+                    $(this).attr("href", $(this).attr("href") + '/page__view__getnewpost');
+                }
                 list.append($('<li></li>').append($(this)));
                 links.push($(this));
             });

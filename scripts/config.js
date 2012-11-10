@@ -5,6 +5,7 @@
             Config.Settings = {
                 subsUrl: 'http://www.dreamincode.net/forums/index.php?app=core&module=usercp&tab=forums&area=topicsubs',
                 signinUrl: 'http://www.dreamincode.net/forums/index.php?&app=core&module=global&section=login&do=form',
+                linkToFirstUnread: true,
                 unreadSelector: 'img[src*="unread"]',
                 linkSelector: 'a[href*="topic"]',
                 recheckFrequency: 300000,
